@@ -1,4 +1,4 @@
-# Bank2Sheets — Сбор банковских операций в Google Sheets.
+3# Bank2Sheets — Сбор банковских операций в Google Sheets.
 Система автоматически собирает транзакции юрлица из API Т-Банка, Сбера и Альфы, приводит их к единому формату и выгружает в Google таблицы. Пользователь видит банки, счета, период, список операций, статусы синхронизации, ошибки и дубли.
 
 ## Аналитика кейса
@@ -121,7 +121,6 @@ WORKSHEET_NAME = "Bank_Transactions"  # имя листа
 
 4. Запустить:
 ```bash
-pip install google-auth google-api-python-client requests apscheduler
 python bank_to_google.py
 ```
 
@@ -144,8 +143,4 @@ python bank_to_google.py
 
 2. Заполнить переменные окружения или вписать ключи в скрипт
 
-3. Сменить `MODE = "production"`
-
-4. Выбрать нужные банки `BANKS = ["tbank", "alfabank", "sber"]` (удалить лишние)
-
-5. Определить интервал обновления `SYNC_INTERVAL_MINUTES = 0.2`
+3. Сменить на `MODE = "production"`
